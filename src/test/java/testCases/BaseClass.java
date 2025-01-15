@@ -30,12 +30,11 @@ public class BaseClass {
 		}
 		 ((WebDriver) driver).manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		 ((WebDriver) driver).manage().window().maximize();
-		 System.out.println("Driver is "+ driver);
-		  }
+		 }
 	
 	@AfterClass
 	  public void cleanUpAUT() {
-		  ((WebDriver) driver).quit();
+		  driver.quit();
 		 // driver.remove();
 	  }
 
