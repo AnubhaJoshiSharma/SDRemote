@@ -29,8 +29,7 @@ public  class ConfigReader {
 		System.out.println("Issues with reading config file");
 		}
 	String appurl = prop.getProperty("appUrl");
-	System.out.println("APP IS "+ appurl);
-	return appurl;
+		return appurl;
 	}
 	
 

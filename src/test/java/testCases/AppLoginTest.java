@@ -1,26 +1,28 @@
 package testCases;
 
-import org.openqa.selenium.By;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
+import pages.LoginPage;
 import utilities.ConfigReader;
 
 public class AppLoginTest extends BaseClass {
+	LoginPage lp;
 	String username = "standard_user";
 	String pwd = "secret_sauce";
-  @Test
+ 	
+	@Test
   public void validateSuccessfulLogin() {
-	// driver.get(baseUrl);
 	 driver.get(ConfigReader.readAppUrl());
-	 System.out.println("Debug t1");
-	 driver.findElement(By.id("user-name")).sendKeys(username);
-	 driver.findElement(By.id("password")).sendKeys(pwd);
-		  try {
+	 lp=PageFactory.initElements(driver, LoginPage.class);
+	 lp.enterUname(username);
+	 lp.enterPwd(pwd);
+	 lp.clickLogin();
+	  try {
 		Thread.sleep(3000);
 	} catch (Exception e) {
 		System.out.println("Issue with login "+ e.getMessage());
 		}
-	  driver.findElement(By.id("login-button")).click();
 	  System.out.println("Login successful");
   }
 	  
