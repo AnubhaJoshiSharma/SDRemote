@@ -8,15 +8,15 @@ import utilities.ConfigReader;
 
 public class AppLoginTest extends BaseClass {
 	LoginPage lp;
-	String username = "standard_user";
-	String pwd = "secret_sauce";
+	//String username = "standard_user";
+	//String pwd = "secret_sauce";
  	
 	@Test
   public void validateSuccessfulLogin() {
 	 driver.get(ConfigReader.readAppUrl());
 	 lp=PageFactory.initElements(driver, LoginPage.class);
-	 lp.enterUname(username);
-	 lp.enterPwd(pwd);
+	 lp.enterUname();
+	 lp.enterPwd();
 	 lp.clickLogin();
 	  try {
 		Thread.sleep(3000);
