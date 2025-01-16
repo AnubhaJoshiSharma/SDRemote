@@ -1,0 +1,9 @@
+<suite name="Regression" parallel="classes">
+	<test name="Two Simple Tests">
+		<classes> 
+			<class name="testCases.AppLoginTest"></class>
+			<class name="testCases.AddProductTest"></class>
+		</classes>
+	</test>
+	
+</suite>

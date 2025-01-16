@@ -28,8 +28,9 @@ public class BaseClass {
 		else {
 			System.out.println("Issue with the browser type provided");
 		}
-		 ((WebDriver) driver).manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		 ((WebDriver) driver).manage().window().maximize();
+		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		 driver.manage().window().maximize();
+		 driver.get(ConfigReader.readAppUrl());
 		 }
 	
 	@AfterClass
