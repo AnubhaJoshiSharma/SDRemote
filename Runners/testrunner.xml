@@ -1,9 +1,8 @@
-<suite name="Regression" parallel="classes">
+<suite name="Regression" thread-count="2" parallel="classes">
 	<test name="Two Simple Tests">
 		<classes> 
 			<class name="testCases.AppLoginTest"></class>
 			<class name="testCases.AddProductTest"></class>
 		</classes>
-	</test>
-	
+	</test>	
 </suite>

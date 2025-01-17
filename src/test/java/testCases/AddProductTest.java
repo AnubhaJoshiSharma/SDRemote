@@ -12,6 +12,7 @@ public class AddProductTest extends BaseClass {
 	
   @Test
   public void addProduct() throws InterruptedException {
+	  System.out.println("Thread info"+ Thread.currentThread().getId());
 	  lp = PageFactory.initElements(driver, LoginPage.class);
 	  pc = PageFactory.initElements(driver, ProductsCatalog.class);
 	  lp.enterUname();

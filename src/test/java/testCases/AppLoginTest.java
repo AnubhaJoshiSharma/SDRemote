@@ -12,7 +12,7 @@ public class AppLoginTest extends BaseClass {
 	
 	@Test
   public void validateSuccessfulLogin() {
-	
+	System.out.println("Thread info"+ Thread.currentThread().getId());
 	 lp=PageFactory.initElements(driver, LoginPage.class);
 	 lp.enterUname();
 	 lp.enterPwd();
