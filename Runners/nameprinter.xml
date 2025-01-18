@@ -1,0 +1,9 @@
+<suite name="nameprintersuite">
+	<test name="nameprintertest">
+	<parameter name="fname" value="Abhisheik"></parameter>
+	<parameter name="lname" value="Sharma"></parameter>
+	<classes>
+		<class name="testNGRevise.ParametersByXML"></class>
+	</classes>
+</test>
+</suite>

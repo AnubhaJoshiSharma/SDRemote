@@ -1,0 +1,17 @@
+<suite name = "Preprod Readiness">
+<test name = "SmokeTests">
+	<groups>
+		<define name="ChoiceGroup">
+			<include name="gp1"></include>
+			<include name="gp6"></include>		
+		</define>
+		<run>
+			<include name="ChoiceGroup"></include>
+		</run>
+	</groups>
+	<classes>
+		<class name="testNGRevise.TestClass1"></class>
+		<class name="testNGRevise.TestClass2"></class>
+	</classes>
+</test>
+</suite>

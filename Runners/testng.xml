@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="ParametersTest">
+	<parameter name="i" value="10"></parameter>
+	<parameter name="j" value="10"></parameter>
+	<classes>
+		<class name="testNGRevise.ParameterizedTest"></class>
+	</classes>
+  </test> <!-- ParametersTest -->
+</suite> <!-- Suite -->
